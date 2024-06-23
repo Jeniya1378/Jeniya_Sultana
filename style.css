@@ -35,9 +35,7 @@ header a {
 
 .profile-img {
     width: 100px;  /* Reduced width */
-    height: 100px; /* Reduced height */
-    border-radius: 100%;
-    object-fit: cover;
+    height: auto; /* Maintain aspect ratio */
     margin-right: 20px;
 }
 
