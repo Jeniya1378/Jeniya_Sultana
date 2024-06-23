@@ -40,9 +40,10 @@ h2 {
 
 ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 ul ul {
     list-style-type: circle;
+    padding-left: 20px;
 }
