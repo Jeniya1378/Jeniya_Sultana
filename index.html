@@ -20,7 +20,6 @@
         </section>
         <section>
             <h2>Experience</h2>
-            <h2>Experience</h2>
             <ul>
                 <li>
                     <strong>Graduate Assistant, CODERS Project, Missouri State University, August 2022 - Present</strong>
@@ -73,31 +72,81 @@
         <section>
             <h2>Publications</h2>
             <ul>
-                <li><strong>A Framework for Context Recognition from Voice Commands and Conversations with Smart Assistants</strong> - IEEE CCNC, 2024</li>
-                <li><strong>Misinformation Detection in Cyber Smart Cities</strong> - Springer, 2023</li>
+                <li>
+                    <strong>A Framework for Context Recognition from Voice Commands and Conversations with Smart Assistants</strong><br>
+                    Authors: Jeniya Sultana, Razib Iqbal<br>
+                    2024 IEEE 21st Consumer Communications & Networking Conference (CCNC), IEEE, 2024, pp. 218-221.<br>
+                    <em>Description:</em> Recognizing contexts or meanings from voice commands and conversations with smart assistants can contribute to the autonomous control of smart home devices and appliances. This paper proposes a novel framework for extracting contexts from short-spoken texts using transfer learning, a fully connected neural network aided with SBERT encoding, and an attention mechanism. The framework is evaluated using two datasets of short smart home commands, demonstrating its efficacy with smaller training datasets.
+                </li>
+                <li>
+                    <strong>Misinformation Detection in Cyber Smart Cities</strong><br>
+                    Authors: Anupom Mondol, Jeniya Sultana, Mohiuddin Ahmed, ANM Bazlur Rashid<br>
+                    Cybersecurity for Smart Cities: Practices and Challenges, Springer International Publishing, 2023, pp. 105-120.<br>
+                    <em>Description:</em> With the increasing integration of cutting-edge technologies in modern urban environments, known as smart cities, there is a significant rise in misinformation spread through social media and IoT devices, creating challenges in Cyber-Physical-Social Systems. This book chapter discusses the pervasive nature of misinformation, its impact on smart cities, and various detection techniques, providing an in-depth analysis of state-of-the-art research in this critical area.
+                </li>
             </ul>
         </section>
         <section>
             <h2>Research and Projects</h2>
             <ul>
-                <li><strong>Dynamic Context Detection from Spoken Text and Voice Command in Home Automation System</strong></li>
-                <li><strong>Context Recognition from Voice Commands in Smart Home</strong></li>
-                <li><strong>Application of Metamorphic Testing for Verification of Neural Network Model in Home Automation System</strong></li>
-                <li><strong>Students Attention Monitoring System using Facial Landmark Points</strong></li>
-                <li><strong>Research Paper Classification: A Neural Network Approach with Feature Selection and TF-IDF</strong></li>
-                <li><strong>Text Analysis: An End-to-End General-Purpose Thematic and Sentiment Analysis Tool</strong></li>
-                <li><strong>Developing a tracking system for human with carried baggage based on Mean Shift and Particle Filter algorithm aided with Sliding Window Detection</strong></li>
-                <li><strong>Crude Oil Price Prediction</strong></li>
-                <li><strong>School Database Management System</strong></li>
-                <li><strong>Library Management System</strong></li>
-                <li><strong>Employee Management System</strong></li>
-                <li><strong>Online Bus Ticket Reservation System</strong></li>
-                <li><strong>Online Food Ordering System</strong></li>
-                <li><strong>App Recommendation</strong></li>
-                <li><strong>Day Night transformation</strong></li>
-                <li><strong>Simple Arithmetic Calculator</strong></li>
+                <li>
+                    <strong>Dynamic Context Detection from Spoken Text and Voice Command in Home Automation System</strong><br>
+                    <em>Description:</em> Identifying contexts or meanings from voice commands and conversations with smart assistants can contribute to the autonomous control of smart home devices and appliances. To improve automation, there is a growing need for efficient context detection that eliminates the need to memorize voice commands. To address this need, we followed a two-step approach in our research. In the first step, we developed a unique context recognition model using a transformer, an attention mechanism, and a fully connected neural network. We trained this model on a conversational dataset of daily interactions, which demonstrated higher accuracy than some baseline models. In the second step, we developed a dynamic context detection framework that groups new conversational data to automatically identify new contexts. We then merge these newly identified contexts with the initial context recognition model, which helps the model learn new contexts and adapt to a changing environment. Preliminary results show that this two-step approach significantly enhances the adaptability of smart home systems. It enables dynamic context detection and improves the quality of human-computer interactions.
+                </li>
+                <li>
+                    <strong>Context Recognition from Voice Commands in Smart Home</strong><br>
+                    <em>Description:</em> To perform context recognition from short voice conversations, we can convert audio to text and apply natural language processing (NLP) techniques to analyze the textual content. However, the existing text classification systems that apply NLP techniques to extract meaningful information from texts require large training data. In this paper, we propose a novel framework to extract contexts from short-spoken texts requiring smaller training datasets. This framework exploits the power of transfer learning and uses a fully connected neural network aided with SBERT encoding, and an attention mechanism. Our proposed framework has been evaluated using two datasets containing short smart home commands. Evaluation results demonstrate that our model achieves higher accuracy in context recognition with low computational costs and less training time compared to other methods like BERT and deep neural networks.
+                </li>
+                <li>
+                    <strong>Application of Metamorphic Testing for Verification of Neural Network Model in Home Automation System</strong><br>
+                    <em>Description:</em> The aim of this project is to apply the metamorphic testing technique to validate a neural network model for context recognition from spoken texts for home automation. The proposed approach involves the systematic design and application of metamorphic relations, generate test cases based on those relations, and assess the model's ability to withstand the variations in the input data. Metamorphic relation is basically the relation of how the changes in the input can affect the changes in output. In this project, we propose 10 metamorphic relations to perform the test and identify the faults in our context recognition model. The experimental results show that metamorphic testing can successfully find the defects in our context recognition model. Thus, it opens more scopes for the improvement of the model and enhancing trustworthiness.
+                </li>
+                <li>
+                    <strong>Students Attention Monitoring System using Facial Landmark Points</strong><br>
+                    <em>Description:</em> In this project, we developed a system that combines transfer learning with deep neural network techniques to measure attention levels. The project utilizes the DAiSEE dataset, consisting of video snippets capturing user activities such as boredom, confusion, engagement, and frustration. Preprocessing involves extracting frames from the videos and applying MediaPipe's FaceMesh detection to obtain facial mesh images. The key feature of this system is Transfer learning which exploits the use of Xception architecture for image classification. The trained model is evaluated on a validation split from the dataset, yielding an accuracy of 65.3% for multi-label classification. We explored another baseline model of a fully connected neural network (FCN) that yields an accuracy of 63.3% over two classes: engaged and not engaged. The project provides insights into monitoring student engagement and proposes future work to address dataset imbalance and explore binary classification approaches.
+                </li>
+                <li>
+                    <strong>Research Paper Classification: A Neural Network Approach with Feature Selection and TF-IDF</strong><br>
+                    <em>Description:</em> With the rapid advancement of computer and information technology, traditional categories for research papers often fail to reflect emerging multidisciplinary fields, making it challenging for users to find relevant research. To address this, we propose a research paper classification system based on metadata, particularly titles and abstracts, due to their public availability. Using feature selection and TF-IDF vectors, we trained a neural network classifier, achieving an accuracy of 77.78% and a precision of 81%. These results highlight the potential for further improvements by exploring advanced classification methods and text representation techniques.
+                </li>
+                <li>
+                    <strong>Text Analysis: An end-to-end general-purpose easy-to-use thematic and sentiment analysis tool</strong><br>
+                    <em>Description:</em> Given the sheer volume and complexity of textual data that is available as well as collected on a daily basis in today’s world, it has become an incredibly difficult task to extract useful information and uncover meaningful data from them. Apart from limited ability to process large amount of texts manually by humans, we also introduce our own biases in the analysis process which clouds our judgement and produces skewed results. With recent major advancements in Machine Learning (ML) and Natural Language Processing (NLP), many techniques have been established to perform sentiment and thematic analysis from texts that can perform analysis on large amount of textual data identifying key components for deriving actionable insights. However, these techniques are intricate to understand and implement, often case-specific, and require advanced expert knowledge, which makes it impossible for general users to get benefit from them. In this project, we present a text analysis tool that is easy to use and performs effective thematic and sentiment analysis on a wide variety of texts without requiring to code and knowledge of NLP/ML as it offers higher level of abstraction and versatility.
+                </li>
+                <li>
+                    <strong>Developing a tracking system for human with carried baggage based on Mean Shift and Particle Filter algorithm aided with Sliding Window Detection</strong><br>
+                    <em>Description:</em> This thesis work uses computer vision techniques in order to develop a human tracking system that is optimal regarding both computational speed and tracking accuracy. It is a hybrid system based on Mean Shift and Particle Filter algorithm aided with sliding window detection technique.
+                </li>
+                <li><strong>Crude Oil Price Prediction</strong><br>
+                    <em>Description:</em> This project predicts day ahead price of crude oil using international crude oil price dataset from 1987 to 2019 using LSTM algorithm.
+                </li>
+                <li><strong>School Database Management System</strong><br>
+                    <em>Description:</em> In this project I developed database management system for multiple schools using PHP, MySQL, HTML, CSS and JS.
+                </li>
+                <li><strong>Library Management System</strong><br>
+                    <em>Description:</em> In this project I developed a library management system for handling book resources using HTML, CSS, WordPress, PHP and MySQL.
+                </li>
+                <li><strong>Employee Management System</strong><br>
+                    <em>Description:</em> I developed a system for managing salary, increment, attendance etc. of employees using PHP, MySQL, HTML, CSS and JS.
+                </li>
+                <li><strong>Online Bus Ticket Reservation System</strong><br>
+                    <em>Description:</em> I developed a system for booking bus ticket online using PHP, MySQL, HTML, CSS and JS.
+                </li>
+                <li><strong>Online Food Ordering System</strong><br>
+                    <em>Description:</em> I developed an online food ordering system using Google API.
+                </li>
+                <li><strong>App Recommendation</strong><br>
+                    <em>Description:</em> I developed a system for recommending apps using app usage data and AI.
+                </li>
+                <li><strong>Day Night transformation</strong><br>
+                    <em>Description:</em> In this project I developed a day to night transformation and vice versa using computer graphics with C++.
+                </li>
+                <li><strong>Simple Arithmetic Calculator</strong><br>
+                    <em>Description:</em> In this project I developed a simple arithmetic calculator for performing addition, subtraction, multiplication, division, solving expression and matrix operations.
+                </li>
             </ul>
         </section>
+
         <section>
             <h2>Awards</h2>
             <ul>
