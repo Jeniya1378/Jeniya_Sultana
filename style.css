@@ -15,6 +15,7 @@ body {
     display: flex;
     align-items: center;
     padding-top: 30px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
 }
 
 header {
@@ -34,9 +35,10 @@ header a {
 }
 
 .profile-img {
-    width: 100px;  /* Reduced width */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
     margin-right: 20px;
+    flex-shrink: 0; /* Ensure the image doesn't shrink too much */
 }
 
 .header-info {
@@ -49,7 +51,7 @@ main {
 }
 
 h2 {
-    color: #800000; /* Maroon color */
+    color: #800000;
     margin-bottom: 10px;
 }
 
@@ -71,75 +73,60 @@ ol {
     font-weight: bold;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        text-align: center; /* Center align text */
+    }
+
+    .profile-img {
+        width: 80px; /* Adjust image size for mobile */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add space below image */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Adjust font size */
+        word-wrap: break-word; /* Ensure long words wrap */
+    }
+
+    header p {
+        font-size: 0.9rem;
+        word-wrap: break-word; /* Prevent text cut-off */
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+    }
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+@media only screen and (max-width: 480px) {
+    .profile-img {
+        width: 60px;
+    }
 
-.header-content {
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-}
+    header h1 {
+        font-size: 1.25rem;
+    }
 
-header {
-    background: #333;
-    color: #fff;
-    padding-bottom: 20px;
-    border-bottom: #77a0a2 3px solid;
-}
+    header p {
+        font-size: 0.85rem;
+    }
 
-header h1, header p {
-    margin: 0;
-}
+    h2 {
+        font-size: 1.1rem;
+    }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.profile-img {
-    width: 100px;  /* Reduced width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
-}
-
-.header-info {
-    flex: 1;
-}
-
-main {
-    padding: 20px;
-    background: #f4f4f4;
-}
-
-h2 {
-    color: #800000; /* Maroon color */
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
-ul ul {
-    list-style-type: circle;
-    padding-left: 20px;
-}
-
-ol {
-    padding-left: 40px;
-}
-
-.bold-name {
-    font-weight: bold;
+    ul, ol {
+        padding-left: 15px;
+    }
 }
